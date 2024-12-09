@@ -16,7 +16,7 @@ function game(playerSelect, computerSelect){
     else if (playerSelect === "paper" && computerSelect === "rock"){
         return "you win";
     }
-    else if (playerSelect === "scissor" && computerSelect === "paper"){
+    else if (playerSelect === "scissors" && computerSelect === "paper"){
         return "you win";
     }
     else{
