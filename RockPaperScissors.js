@@ -24,8 +24,17 @@ function game(playerSelect, computerSelect){
     }
 }
 
-const playerSelect = prompt("Make your move").toLowerCase();
+let playerSelect;
+while (true) {
+    playerSelect = prompt("Make your move (rock, paper, or scissors):").toLowerCase();
+    if (choice.includes(playerSelect)) {
+        break;
+    }   else {
+        console.log("Invalid Input, select 'rock', 'paper', or 'scissors'.");
+    }
+}
 const computerSelect = getcomputerchoice(choice);
+console.log(`Computer Chose: ${computerSelect}`);
 console.log(game(playerSelect , computerSelect));
 
     
