@@ -4,7 +4,6 @@ let choice = ['rock' , 'paper' , 'scissors']
 function getcomputerchoice(choice){
     return choice[Math.floor(Math.random() * choice.length)];
 }
-console.log(getcomputerchoice(choice))
 
 function game(playerSelect, computerSelect){
     if (playerSelect === computerSelect){
